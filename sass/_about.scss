@@ -1,0 +1,94 @@
+.about{
+    width: 100%;
+    margin-top: -25vh;
+    padding: 25rem 0;
+    background-color: $secondary-bg-color;
+    color: $secondary-text-color;
+
+    @media only screen and (max-width:$bp-largest){
+        margin-top: -10vh;
+        padding:10rem 0 15rem 0;
+    }
+
+    
+    .primary-title{
+        text-align: center;
+        margin-bottom: 4rem;
+        
+        h2{
+            @extend %titleCenter;
+        }
+
+        h2::after {
+            @extend %titleCenterAfter;
+        }
+    }
+
+    .description{
+        display:grid;
+        grid-template-columns:1fr 2fr;
+        align-items: center;
+        justify-items: center;
+        grid-column-gap: 2rem;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width:$bp-large){
+            display: flex;
+            flex-direction: column;
+        }
+        @media only screen and (max-width:$bp-medium){
+            margin-bottom: 2rem;
+        }
+        
+        &__photo{
+            grid-column: 1/2;
+            margin-bottom: 4rem;
+
+            img{
+                height: 25rem;
+                width: 25rem;
+                border-radius: 50%;
+                @media only screen and (max-width:$bp-largest){
+                    height: 20rem;
+                    width: 20rem;
+                }
+                @media only screen and (max-width:$bp-small){
+                    height: 18rem;
+                    width: 18rem;
+                }
+            }
+        }
+    
+        &__text{
+            font-size: $fontSize-text;
+            grid-column: 2/3;
+            padding-right: 7rem;
+            line-height: 2;
+
+            @media only screen and (max-width:$bp-large){
+                text-align: center;
+                padding: 0 3rem;
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width:$bp-medium){
+                font-size: 2.2rem;
+            }
+            @media only screen and (max-width:$bp-small){
+                font-size: 1.8rem;
+            }
+            
+        }
+    }
+}
+
+
+// JS Class ==========================
+.fade-in{
+    opacity:0;
+    transition:opacity 500ms ease-in;
+  }
+  
+.fade-in.appear{
+    opacity: 1;
+}

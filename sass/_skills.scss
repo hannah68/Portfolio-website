@@ -1,0 +1,110 @@
+.skills{
+    margin-top: -12rem;
+    padding: 25rem 0 10rem 0;
+    background-color: $secondary-bg-color;
+
+    @media only screen and (max-width:$bp-large){
+        padding: 10rem 0;
+    }
+    
+    .primary-title{
+        text-align: center;
+        
+        h2{
+            @extend %titleCenter;
+        }
+    
+        h2::after {
+            @extend %titleCenterAfter;
+        }
+    }
+    
+    .skills-group{
+        font-size: $fontSize-text;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5rem 3rem;
+        color: $secondary-text-color;
+        
+        @media only screen and (max-width:$bp-large){
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            align-items: center;
+            row-gap: 2rem;
+        }
+        @media only screen and (max-width:$bp-medium){
+            font-size: 2rem;    
+        }
+
+        @media only screen and (max-width:$bp-small){
+            font-size: 1.5rem;
+        }
+
+        img{
+            width: 6rem;
+            height: 5rem;
+            display: block;
+            margin: 0 auto; 
+
+            @media only screen and (max-width:$bp-small){
+                width: 4rem;
+                height: 3rem;
+            }
+        }
+
+        p{
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+
+@media only screen and (max-width:$bp-large){
+    .col-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    .col-2{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    
+    .col-3{
+        grid-row: 1/2;
+        grid-column: 3/3;
+    }
+    
+    .col-1{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    .col-2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    
+    .col-3{
+        grid-row: 2/3;
+        grid-column: 3/3;
+    }
+}
+
+
+// JS class===========================
+.reveal{
+    position: relative;
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}

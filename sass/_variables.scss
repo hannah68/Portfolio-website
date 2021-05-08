@@ -1,0 +1,31 @@
+// COLORS
+$primary-bg-color:#5271FF;
+$secondary-bg-color:#ccd5ff;
+
+$bg-body-color:#fde6ff;
+
+$primary-text-color:#121212;
+$secondary-text-color:#0021B3;
+$tertiary-text-color:#F152FF;
+
+$primary-btn-color:#c8b4fc;
+
+// FONT SIZE=======================
+$fontSize-primary-header:9rem;
+$fontSize-secondary-header:3rem;
+$fontSize-title:3rem;
+$fontSize-text:2.2rem;
+
+// FONT-Family VARIABLES==================
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// Responisve Breakpoints=================
+$bp-laptop:90em;            // 1440px
+$bp-largest: 75em;          // 1200px
+$bp-large: 62em;            // 992px
+$bp-large-md: 52em;         // 832px
+$bp-medium:46.875em;        // 750px;
+$bp-medium-sm:30.375em;     // 486px;
+$bp-small: 28.125em;        // 450px;
+$bp-smallest: 26.625em;     // 426px;

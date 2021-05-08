@@ -1,0 +1,95 @@
+@keyframes slidein {
+    0% { margin-left:-100px; }
+    20% { margin-left:-100px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {opacity:1;width:400px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:400px;}
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes mainFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes mainBlock{
+    0%{
+        width: 0%;
+        left: 0;
+    }
+
+    50%{
+        width: 100%;
+        left: 0;
+    }
+
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+
+@keyframes secFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+
+@keyframes circle{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        background-color:#fff;
+    }
+
+    50%{
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+        background-color:#fff;
+       
+        bottom: 50px;
+    }
+
+    65%{
+        width: 7px;
+        height: 7px;
+        bottom: 0;
+    }
+
+    80%{
+        width: 10px;
+        height: 10px;
+        bottom: 30px;
+    }
+
+    100% {
+        width: 7px;
+        height: 7px;
+        background-color:$tertiary-text-color;
+        bottom: 13px;
+        // border: 2px solid rgb(148, 147, 147);
+    }
+}
